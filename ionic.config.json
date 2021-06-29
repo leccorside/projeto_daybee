@@ -1,5 +1,7 @@
 {
   "name": "daybee",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
