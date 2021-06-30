@@ -38,6 +38,10 @@ const routes: Routes = [
   {
     path: 'cadastro4',
     loadChildren: () => import('./cadastro4/cadastro4.module').then( m => m.Cadastro4PageModule)
+  },
+  {
+    path: 'contacriada',
+    loadChildren: () => import('./contacriada/contacriada.module').then( m => m.ContacriadaPageModule)
   }
 ];
 @NgModule({

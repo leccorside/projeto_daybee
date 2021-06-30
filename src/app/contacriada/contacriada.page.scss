@@ -1,0 +1,176 @@
+.login2{
+    background-image: url('../../assets/img/bg1-2.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    overflow:hidden;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+.p2{
+    font-family: 'Montserrat-Regular';
+    color: #000 !important;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+ion-slide{
+    padding-bottom: 10px;
+    display: block !important;
+}
+
+ion-slides {
+    --bullet-background: #D7670A !important;
+    --bullet-background-active: #4C2A0B !important;
+}
+
+.icoinsta{
+    color: #fff !important;
+    font-size: 25px;
+    margin-right: 7px;
+}
+
+.icoface{
+    color: #fff !important;
+    font-size: 25px; 
+}
+
+.form{
+    padding: 50px 15px;
+    text-align: center;
+}
+
+.imagem{
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.foto{
+    width: 100%;
+    max-width: 100px;
+}
+
+.camera{
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    width: 25px;
+}
+
+.form ion-item {
+    --background: rgba(0,0,0,0);
+    --border-color: rgba(0,0,0,0);
+    border-bottom: 1px solid #fff;
+    --highlight-background: rgba(0,0,0,0);
+}
+
+.form ion-input{
+    color: #fff !important;
+    text-align: center;
+    font-size: 25px;
+    --placeholder-opacity: 1;
+}
+
+.form ion-label{
+    font-weight: 700;
+    color: #fff !important;
+    font-size: 25px;
+    text-align: center;
+}
+
+.form ion-label .has-focus{
+   transform: translateY(50%) scale(0) !important;
+}
+
+.linha1{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.linha1 ion-icon{
+    font-size: 30px;
+    color: #fff !important;
+    margin-top: 10px;
+}
+
+.esqueci {
+    color: #000;
+    font-size: 13px;
+    text-decoration: underline;
+    left: 0;
+    top: 5px;
+}
+
+.cad{
+    position: relative;
+    right: 0;
+    top: 5px;
+    color: #000 !important;
+    font-weight: 700;
+    float: right;
+}
+
+.btns4{
+    position: relative;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    
+    top: 92px;
+}
+
+.btns4 a{
+    text-decoration: underline;
+    color: #000;
+}
+
+.btn2{
+    background: #D74D0A;
+    border: 1px solid #000;
+    padding: 12px 20px;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.btns4 .fab{
+    margin-right: 7px;
+    font-size: 20px;
+}
+
+.form h1{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.form p{
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 30px;
+}
