@@ -2,20 +2,51 @@
 
 <ion-content>
 
+<div class="login2">
+
   <div class="logo">
-    <img src="" alt="">
+    <img src="../../assets/img/logo.png">
   </div>
 
   <ion-slides pager="true" [options]="slideOpts">
     <ion-slide>
-      <h1>Slide 1</h1>
+      <p class="p2">Cadastre seus queridinhos e seja alertado com antecedência sempre que surgir uma data comemorativa!</p>
     </ion-slide>
     <ion-slide>
-      <h1>Slide 2</h1>
+      <p class="p2">A Daybee vai escolher um presente bem legal para o seu queridinho ganhar em seu dia especial!</p>
     </ion-slide>
     <ion-slide>
-      <h1>Slide 3</h1>
+      <p class="p2">Fique por dentro das novidades em nossas redes sociais!</p>
+      <p class="social">
+        <ion-icon name="logo-instagram" class="icoinsta"></ion-icon>
+        <ion-icon name="logo-facebook" class="icoface"></ion-icon>
+      </p>
     </ion-slide>
   </ion-slides>
+
+  <div class="form">
+    <ion-item>
+      <ion-label position="floating">Seu e-mail</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <div class="linha1">
+      <a class="esqueci" (click)="esqueci()">Esqueci minha senha</a>
+      <span class="cad" (click)="cadastro()">CADASTRE-SE!</span>
+    </div>
+
+    <div class="btns4">
+      <button class="btn2"><i class="fab fa-google"></i> Entre com o Google</button><br>
+      <button class="btn2"><i class="fab fa-facebook-f"></i> Entre com o Facebook</button>
+    </div>
+
+  </div>
+
+</div>
 
 </ion-content>

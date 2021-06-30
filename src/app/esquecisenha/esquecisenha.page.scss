@@ -24,6 +24,7 @@
     font-family: 'Montserrat-Regular';
     color: #000 !important;
     font-size: 15px;
+    text-align: center;
 }
 
 ion-slide{
@@ -70,17 +71,15 @@ ion-slides {
 
 .linha1{
     margin-top: 10px;
-    position: relative;
+    text-align: center;
 }
 
 .esqueci {
     color: #000;
     font-size: 13px;
     text-decoration: underline;
-    position: relative;
     left: 0;
     top: 5px;
-    float: left;
 }
 
 .cad{

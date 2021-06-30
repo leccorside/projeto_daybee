@@ -1,3 +1,100 @@
+@media screen and (max-width: 390px) {
+    .div1 h1{
+        line-height: 32px !important;
+        font-size: 25px !important;
+    }
+
+    .bee1{
+        margin-top: 0 !important;
+    }
+    
+    .bee2{
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .div1 h1{
+        line-height: 30px !important;
+        font-size: 22px !important;
+        margin-top: 0 !important;
+    }
+
+    .bee1{
+        margin-top: 0 !important;
+    }
+    
+    .bee2{
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .div1 h1{
+        line-height: 50px !important;
+        font-size: 40px !important;
+        margin-top: 0 !important;
+    }
+
+    .bee1{
+        max-width: 500px !important;
+        margin-top: 20px !important;
+    }
+    
+    .bee2{
+        max-width: 500px !important;
+        margin-top: 20px !important;
+    }
+
+    .div2 p{
+        font-size: 30px !important;
+        line-height: 35px !important;
+    }
+
+    .btn2{
+        padding: 15px 50px !important;
+        font-size: 30px !important;
+    }
+}
+
+@media screen and (max-width: 1025px) and (min-width: 769px){
+    .div1 h1{
+        line-height: 62px !important;
+        font-size: 62px !important;
+        margin-top: 30px !important;
+    }
+
+    .bee1{
+        max-width: 700px !important;
+        margin-top: 20px !important;
+    }
+    
+    .bee2{
+        max-width: 700px !important;
+        margin-top: 20px !important;
+    }
+
+    .div2 p{
+        font-size: 40px !important;
+        line-height: 40px !important;
+    }
+
+    .btn2{
+        padding: 20px 70px !important;
+        font-size: 45px !important;
+    }
+}
+
+.close1 {
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
+}
+
+
 .conteudo{
    height: 100vh;
 }
@@ -27,9 +124,9 @@
 
 .div1 h1{
     font-family: 'Montserrat-Bold';
-    line-height: 36px;
+    line-height: 32px;
     margin-bottom: 0 !important;
-    font-size: 37px;
+    font-size: 32px;
     color: #fff !important;
 }
 

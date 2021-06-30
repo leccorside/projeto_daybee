@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-intro',
@@ -14,9 +15,16 @@ export class IntroPage implements OnInit {
     slidesPerView: 1
   };
 
-  constructor() { }
+  constructor(
+    private navCtrl: NavController
+
+  ) { }
 
   ngOnInit() {
+  }
+
+  fecharIntro(){
+    this.navCtrl.navigateRoot('/login');
   }
 
 }
