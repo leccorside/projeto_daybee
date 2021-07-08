@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-intro',
@@ -16,8 +17,9 @@ export class IntroPage implements OnInit {
   };
 
   constructor(
-    private navCtrl: NavController
-
+    private navCtrl: NavController,
+    private route: ActivatedRoute, 
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -25,6 +27,11 @@ export class IntroPage implements OnInit {
 
   fecharIntro(){
     this.navCtrl.navigateRoot('/login');
+  }
+
+  queridinhos(){
+    //this.navCtrl.navigateRoot('Tab1Page');
+    this.router.navigate(['/tabs']);
   }
 
 }

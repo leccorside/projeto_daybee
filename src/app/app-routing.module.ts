@@ -8,7 +8,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'tabs',
+    path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
@@ -42,7 +42,11 @@ const routes: Routes = [
   {
     path: 'contacriada',
     loadChildren: () => import('./contacriada/contacriada.module').then( m => m.ContacriadaPageModule)
+  },  {
+    path: 'tab4',
+    loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
   }
+
 ];
 @NgModule({
   imports: [

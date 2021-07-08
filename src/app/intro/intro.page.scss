@@ -123,10 +123,11 @@
 }
 
 .div1 h1{
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat-ExtraBold', sans-serif !important;
     line-height: 32px;
+    font-weight: 700;
     margin-bottom: 0 !important;
-    font-size: 32px;
+    font-size: 35px;
     color: #fff !important;
 }
 
@@ -135,7 +136,7 @@
 }
 
 .div2 p{
-    font-family: "Montserrat-Bold";
+    font-family: "Montserrat-Bold", sans-serif !important;
     color: #000;
     font-size: 17px;
     line-height: 17px;
@@ -146,6 +147,7 @@
 
 .btn2{
     background: #D7670A !important;
+    font-family: 'Montserrat-Bold', sans-serif !important;
     font-weight: 700;
     padding: 10px 40px;
     border-radius: 50px;
@@ -166,13 +168,13 @@ ion-slides {
 
 .bee1{
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     margin-top: 20px;
 }
 
 .bee2{
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     margin-top: 20px;
 }
 

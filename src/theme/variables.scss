@@ -77,9 +77,18 @@
 
   --bullet-background-active: #4C2A0B;
   --bullet-background: #D7670A;
+  --color-selected: #4C2A0B;
+
+  
+
+
 }
 
+
+
 @media (prefers-color-scheme: dark) {
+
+  
   /*
    * Dark Colors
    * -------------------------------------------
@@ -113,7 +122,11 @@
     src: url('../assets/fonts/Montserrat-ExtraBold.ttf');
   }
 
+
   body {
+
+    
+
     --ion-color-primary: #428cff;
     --ion-color-primary-rgb: 66,140,255;
     --ion-color-primary-contrast: #ffffff;
@@ -177,6 +190,9 @@
     --ion-color-light-contrast-rgb: 255,255,255;
     --ion-color-light-shade: #1e2023;
     --ion-color-light-tint: #383a3e;
+
+
+    
 
    
   }
@@ -271,4 +287,9 @@
 
 
   }
+
+  
 }
+
+
+
