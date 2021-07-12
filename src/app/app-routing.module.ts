@@ -57,6 +57,10 @@ const routes: Routes = [
   {
     path: 'novoqueridinho3',
     loadChildren: () => import('./novoqueridinho3/novoqueridinho3.module').then( m => m.Novoqueridinho3PageModule)
+  },
+  {
+    path: 'novoqueridinho4',
+    loadChildren: () => import('./novoqueridinho4/novoqueridinho4.module').then( m => m.Novoqueridinho4PageModule)
   }
 
 
