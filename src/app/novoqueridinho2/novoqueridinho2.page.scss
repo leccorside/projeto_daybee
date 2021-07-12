@@ -1,5 +1,5 @@
 .login2{
-    background-image: url('../../assets/img/bg1.png');
+    background-image: url('../../assets/img/bg3.png');
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,50 +16,89 @@
     justify-content: center;
 }
 
-.logo{
-    text-align: center;
+.select1{
+    position: relative;
+    border-bottom: 1px solid #fff;
 }
 
-.logo img{
-    width: 100%;
-    max-width: 220px;
-    margin: 0 auto;
+.select1 select:focus{
+    border: none !important;
+    outline: none;
+
 }
 
-.p2{
-    font-family: 'Montserrat-Regular';
-    color: #000 !important;
-    font-size: 15px;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-weight: 700;
+.select1 option{
+ background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-ion-slide{
-    padding-bottom: 10px;
-    display: block !important;
+.select1 option:selected {
+    background: #a680c4 !important;
 }
 
-ion-slides {
-    --bullet-background: #D7670A !important;
-    --bullet-background-active: #4C2A0B !important;
+.select1 option:focus {
+    background: #a680c4 !important;
 }
 
-.icoinsta{
-    color: #fff !important;
-    font-size: 25px;
-    margin-right: 7px;
+option{
+    background: #a680c4 !important;
 }
 
-.icoface{
-    color: #fff !important;
-    font-size: 25px; 
+.down {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 99;
 }
+
+
+
+#appearance-select{   
+    -webkit-appearance: none;  
+    /* Remove estilo padrão do Chrome */   
+    -moz-appearance: none; 
+    /* Remove estilo padrão do FireFox */   
+    appearance: none; 
+    /* Remove estilo padrão do FireFox*/   
+   /* background: url(../../assets/img/down.png) no-repeat;*/
+   background: none;
+    ;  
+    /* Imagem de fundo (Seta) */   
+    background-position: 258px center;  
+    /*Posição da imagem do background*/   
+    width: 100%; 
+    /* Tamanho do select, maior que o tamanho da div "div-select" */   
+    height:45px; 
+    /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */   
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 30px;
+   
+    position: relative;
+    z-index: 999;
+}
+
+
+.nomeedit span{
+    color: #fff;
+    font-size: 24px; 
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.nomeedit img{
+   margin-left: 5px; 
+}
+
+
+
 
 .form{
     padding: 0 15px;
     text-align: center;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .imagem{

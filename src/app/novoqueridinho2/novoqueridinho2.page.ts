@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActionSheetController, NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss']
+  selector: 'app-novoqueridinho2',
+  templateUrl: './novoqueridinho2.page.html',
+  styleUrls: ['./novoqueridinho2.page.scss'],
 })
-export class Tab2Page {
+export class Novoqueridinho2Page implements OnInit {
 
   constructor(
     private navCtrl: NavController,
@@ -21,7 +21,7 @@ export class Tab2Page {
   }
 
   proximo(){
-    this.navCtrl.navigateRoot('/novoqueridinho2');
+    this.navCtrl.navigateRoot('/novoqueridinho3');
   }
 
 
@@ -47,6 +47,9 @@ export class Tab2Page {
 
     const { role } = await actionSheet.onDidDismiss();
     console.log('onDidDismiss resolved with role', role);
+  }
+
+  ngOnInit() {
   }
 
 }

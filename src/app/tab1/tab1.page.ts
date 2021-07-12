@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { ModalController, NavController } from '@ionic/angular';
+import { DetalhesqueridinhosPage } from '../detalhesqueridinhos/detalhesqueridinhos.page';
 
 @Component({
   selector: 'app-tab1',
@@ -8,10 +9,21 @@ import { NavController } from '@ionic/angular';
 })
 export class Tab1Page {
 
-  constructor(private navCtrl: NavController) {}
+  constructor(
+    private navCtrl: NavController,
+    public modalController: ModalController
+    ) {}
 
-  esqueci(){
-    this.navCtrl.navigateRoot('/esquecisenha');
+  /*detalhes(){
+    this.navCtrl.navigateRoot('/detalhesqueridinhos');
+  }*/
+
+  async detalhes() {
+    const modal = await this.modalController.create({
+      component: DetalhesqueridinhosPage,
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
   }
 
 }

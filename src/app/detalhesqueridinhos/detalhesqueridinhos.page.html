@@ -1,0 +1,174 @@
+
+
+<ion-content>
+
+  <div class="queri">
+
+    <div class="favicon">
+      <img src="../../assets/img/favicon.png">
+    </div>
+
+    <ion-icon name="close-outline" class="icoclose" (click)="fechar()"></ion-icon>
+
+
+    <div class="fotoperfil">
+      <img src="../../assets/img/foto.png">
+    </div>
+
+    <div class="infos1">
+      <div class="nome">
+        Maria Marcela 
+        <ion-icon name="settings-outline" class="config"></ion-icon>
+      </div>
+
+      <div class="graus">
+        <span class="grau">Mãe</span> 
+        <span class="nascimento">20/05/1978</span>
+      </div>
+
+      <div class="interesses">
+        <p>Interesses:</p>
+
+        <span class="tag">Bordados</span>
+        <span class="tag">Cinema</span>
+        <span class="tag">Gatos</span>
+        <span class="plus">+</span>
+      </div>
+
+    </div>
+
+    <div class="resumo">
+
+      <ion-list lines="none">
+
+        <ion-item button class="titulo3" color="transparent">
+          
+          <div class="trash2" slot="start">
+            <ion-icon name="time" class="relogio"></ion-icon>
+          </div>
+
+          <ion-label class="titulo33">
+            <p>Você será avisado com<br>
+              <span class="num1">30</span> dias de antecedência:</p>
+          </ion-label>
+          
+        </ion-item>
+
+      </ion-list>
+
+      <ion-list lines="none">
+
+          <ion-item button (click)="detalhes()" class="item2" color="transparent">
+            
+            <div class="trash" slot="start">
+              <ion-icon name="trash-outline"></ion-icon>
+            </div>
+
+            <ion-label class="nomes1">
+              <span>Dia das Mães</span>  
+            </ion-label>
+
+            <div class="end" slot="end">
+              <span class="dot">..............</span>
+              <span class="data">09/05</span>  
+              <img src="../../assets/img/plus2.png">
+            </div>
+            
+          </ion-item>
+
+          <ion-item button (click)="detalhes()" class="item2" color="transparent">
+            
+            <div class="trash" slot="start">
+              <ion-icon name="trash-outline"></ion-icon>
+            </div>
+
+            <ion-label class="nomes1">
+              <span>Dia da Mulher</span>  
+            </ion-label>
+
+            <div class="end" slot="end">
+              <span class="dot">..............</span>
+              <span class="data">08/03</span>  
+              <img src="../../assets/img/plus2.png">
+            </div>
+            
+          </ion-item>
+
+          <ion-item button (click)="detalhes()" class="item2" color="transparent">
+            
+            <div class="trash" slot="start">
+              <ion-icon name="trash-outline"></ion-icon>
+            </div>
+
+            <ion-label class="nomes1">
+              <span>Páscoa</span>  
+            </ion-label>
+
+            <div class="end" slot="end">
+              <span class="dot">..............</span>
+              <span class="data">17/04</span>  
+              <img src="../../assets/img/plus2.png">
+            </div>
+            
+          </ion-item>
+
+       </ion-list>
+
+
+    </div>
+
+    <div class="btns3">
+
+      <ion-grid>
+        <ion-row> 
+          <ion-col size="6">
+            <ion-grid>
+              <ion-row class="linha1"> 
+                <ion-col size="3" class="imgbtn">
+                  <div class="imgcol">
+                    <img src="../../assets/img/calen.png">
+                  </div>
+                </ion-col>
+                <ion-col size="9">
+                  <div class="btn22">
+                    <p>Adicionar<br>
+                      nova data</p>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col size="6">
+            <ion-grid>
+              <ion-row class="linha1"> 
+                <ion-col size="3" class="imgbtn">
+                  <div class="imgcol">
+                    <img src="../../assets/img/rel.png">
+                  </div>
+                </ion-col>
+                <ion-col size="9">
+                  <div class="btn22">
+                    <p>Ajustar<br>
+                      antecedência</p>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </div>
+
+    <div class="btnpresentear">
+      <ion-button color="secondary" class="btnpres">
+        <img src="../../assets/img/presente.png" slot="start">
+        PRESENTEAR!
+      </ion-button>
+    </div>
+
+  
+  </div>
+  
+  </ion-content>
+  

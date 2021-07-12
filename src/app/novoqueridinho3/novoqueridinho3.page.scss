@@ -1,0 +1,130 @@
+.login2{
+    background-image: url('../../assets/img/bg3.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    overflow:hidden;
+    margin: 0 auto;
+    padding: 50px 10px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fami{
+    margin-top: 22px;
+}
+
+.mae {
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    border-radius: 50px;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.p22 {
+    color: #fff;
+    font-family: 'Montserrat-Regular', sans-serif;
+    margin-top: 20px;
+}
+
+.dataniver{
+    color: #fff;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.nomeedit span{
+    color: #fff;
+    font-size: 24px; 
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 19px;
+}
+
+.nomeedit img{
+   margin-left: 5px; 
+}
+
+
+
+
+.form{
+    padding: 0 15px;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.imagem{
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.foto{
+    width: 100%;
+    max-width: 100px;
+}
+
+.camera{
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    width: 25px;
+}
+
+.form ion-item {
+    --background: rgba(0,0,0,0);
+    --border-color: rgba(0,0,0,0);
+    border-bottom: 1px solid #fff;
+    --highlight-background: rgba(0,0,0,0);
+}
+
+.form ion-input{
+    color: #fff !important;
+    text-align: center;
+    font-size: 25px;
+    --placeholder-opacity: 1;
+}
+
+.form ion-label{
+    font-weight: 700;
+    color: #fff !important;
+    font-size: 25px;
+    text-align: center;
+}
+
+.form{
+    padding: 0 15px;
+}
+
+.form ion-item {
+    --background: rgba(0,0,0,0);
+    --border-color: rgba(0,0,0,0);
+    border-bottom: 1px solid #fff;
+    --highlight-background: rgba(0,0,0,0);
+}
+
+.form ion-input{
+    color: #fff !important;
+    text-align: center;
+    font-size: 25px;
+    --placeholder-opacity: 1;
+}
+
+.form ion-label{
+    font-weight: 700;
+    color: #fff !important;
+    font-size: 25px;
+    text-align: center;
+}
+
+.form ion-label .has-focus{
+   transform: translateY(50%) scale(0) !important;
+}

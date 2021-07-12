@@ -25,6 +25,48 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+@font-face {
+    font-family: 'Montserrat-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Montserrat-Light.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Montserrat-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat-SemiBoldItalic';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Montserrat-SemiBoldItalic.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat-SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Montserrat-SemiBold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Montserrat-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat-ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Montserrat-ExtraBold.ttf');
+  }
+
 .swiper-pagination-bullets {
     bottom: 10px !important;
 }

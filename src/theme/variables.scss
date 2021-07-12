@@ -8,11 +8,12 @@
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
+  --ion-color-primary-shade: #9D55D4;
   --ion-color-primary-tint: #4c8dff;
+  --ion-color-roxo: #9D55D4;
 
   /** secondary **/
-  --ion-color-secondary: #3dc2ff;
+  --ion-color-secondary: #9D55D4;
   --ion-color-secondary-rgb: 61, 194, 255;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
@@ -94,38 +95,10 @@
    * -------------------------------------------
    */
 
-   @font-face {
-    font-family: 'Montserrat-Light';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../assets/fonts/Montserrat-Light.ttf');
-  }
 
-  @font-face {
-    font-family: 'Montserrat-Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../assets/fonts/Montserrat-Regular.ttf');
-  }
-
-  @font-face {
-    font-family: 'Montserrat-Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../assets/fonts/Montserrat-Bold.ttf');
-  }
-
-  @font-face {
-    font-family: 'Montserrat-ExtraBold';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../assets/fonts/Montserrat-ExtraBold.ttf');
-  }
 
 
   body {
-
-    
 
     --ion-color-primary: #428cff;
     --ion-color-primary-rgb: 66,140,255;
@@ -134,6 +107,7 @@
     --ion-color-primary-shade: #3a7be0;
     --ion-color-primary-tint: #5598ff;
     --ion-color-btntema1: #D7670A;
+    --ion-color-roxo: #9D55D4;
 
     --ion-color-secondary: #50c8ff;
     --ion-color-secondary-rgb: 80,200,255;
@@ -156,7 +130,7 @@
     --ion-color-success-shade: #29c467;
     --ion-color-success-tint: #44e283;
 
-    --ion-color-warning: #ffd534;
+    --ion-color-warning: #9D55D4;
     --ion-color-warning-rgb: 255,213,52;
     --ion-color-warning-contrast: #000000;
     --ion-color-warning-contrast-rgb: 0,0,0;

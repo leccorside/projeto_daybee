@@ -42,10 +42,24 @@ const routes: Routes = [
   {
     path: 'contacriada',
     loadChildren: () => import('./contacriada/contacriada.module').then( m => m.ContacriadaPageModule)
-  },  {
+  },
+  {
     path: 'tab4',
     loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+  },
+  {
+    path: 'detalhesqueridinhos',
+    loadChildren: () => import('./detalhesqueridinhos/detalhesqueridinhos.module').then( m => m.DetalhesqueridinhosPageModule)
+  },  {
+    path: 'novoqueridinho2',
+    loadChildren: () => import('./novoqueridinho2/novoqueridinho2.module').then( m => m.Novoqueridinho2PageModule)
+  },
+  {
+    path: 'novoqueridinho3',
+    loadChildren: () => import('./novoqueridinho3/novoqueridinho3.module').then( m => m.Novoqueridinho3PageModule)
   }
+
+
 
 ];
 @NgModule({
