@@ -87,6 +87,7 @@ span.num1 {
 .fotoperfil {
     width: 100%;
     text-align: center;
+    margin-top: -35px;
 }
 
 .fotoperfil img{
@@ -104,8 +105,9 @@ span.num1 {
 .infos1 {
     text-align: center;
     background: #fff;
-    padding: 57px 10px 25px 10px;
-    margin-top: -50px;
+    padding: 65px 10px 25px 10px;
+    margin-top: -55px;
+    height: 100%;
 }
 
 .nome {
@@ -118,6 +120,7 @@ span.num1 {
 .config {
     position: relative;
     top: 4px;
+    font-size: 23px;
 }
 
 .graus {
@@ -140,7 +143,7 @@ span.num1 {
 }
 
 .interesses {
-    margin-top: 22px;
+    margin-top: 35px;
 }
 
 .interesses p{
@@ -304,15 +307,40 @@ ion-item{
 
 }
 
+.icohouse {
+    font-size: 21px;
+    position: relative;
+    top: 1px;
+}
+
+.form {
+    padding: 0 15px;
+}
+
+.form ion-item {
+    --background: rgba(0,0,0,0);
+    --border-color: rgba(0,0,0,0);
+    border-bottom: 1px solid #4C2A0B;
+    --highlight-background: rgba(0,0,0,0);
+    height: 45px;
+}
+
+.form ion-input{
+    color: #F6B215 !important;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    --placeholder-opacity: 1;
+}
+
+.tags {
+    margin-top: 40px;
+}
+
 .gadge2{
-    padding: 7px 10px;
+    padding: 7px 15px;
     border-radius: 50px;
     border: 1px solid #4C2A0B;
     margin-right: 10px;
-}
-
-.gadge3{
-    padding: 7px 20px;
-    border-radius: 50px;
-    border: 1px solid #4C2A0B;
+    margin-bottom: 5px;
 }

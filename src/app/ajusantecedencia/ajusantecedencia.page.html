@@ -1,0 +1,130 @@
+
+
+<ion-content>
+
+  <div class="queri">
+
+    <div class="favicon">
+      <img src="../../assets/img/favicon.png">
+    </div>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+   </ion-buttons>
+
+    <ion-icon name="close-outline" class="icoclose" (click)="fechar()"></ion-icon>
+
+
+    <div class="fotoperfil">
+      <img src="../../assets/img/foto.png">
+    </div>
+
+    <div class="infos1">
+      <div class="nome">
+        <ion-icon name="home-outline" class="icohouse"></ion-icon>
+        Maria Marcela 
+        <ion-icon name="settings-outline" class="config"></ion-icon>
+      </div>
+
+      <div class="graus">
+        <span class="grau">Mãe</span> 
+        <span class="nascimento">20/05/1978</span>
+      </div>
+
+      <div class="interesses">
+        <p><img src="../../assets/img/rel.png" class="calen">  Ajustar antecedência</p>
+      </div>
+
+
+      <ion-list lines="none" style="margin-bottom: 40px;">
+
+        <ion-item button class="item2">
+
+          <ion-label class="nomes1">
+            <span>Dia das Mães (09/05)</span>  
+            <span class="dot">..........</span>
+          </ion-label>
+
+          <div class="end" slot="end">
+            <ion-select interface="popover" placeholder="30" class="select1">
+              <ion-select-option value="30">30</ion-select-option>
+              <ion-select-option value="20">20</ion-select-option>
+              <ion-select-option value="15">15</ion-select-option>
+              <ion-select-option value="10">10</ion-select-option>
+            </ion-select>
+
+          </div>
+          
+        </ion-item>
+
+        <ion-item button class="item2">
+          
+          <ion-label class="nomes1">
+            <span>Dia da Mulher (08/03)</span>  
+            <span class="dot">..........</span>
+          </ion-label>
+
+          <div class="end" slot="end">
+            <ion-select interface="popover" placeholder="30" class="select1">
+              <ion-select-option value="30">30</ion-select-option>
+              <ion-select-option value="20">20</ion-select-option>
+              <ion-select-option value="15">15</ion-select-option>
+              <ion-select-option value="10">10</ion-select-option>
+            </ion-select>
+
+          </div>
+          
+        </ion-item>
+
+        <ion-item button class="item2">
+          
+          <ion-label class="nomes1">
+            <span>Páscoa (17/04)</span>  
+            <span class="dot">....................</span>
+          </ion-label>
+
+          <div class="end" slot="end">
+            <ion-select interface="popover" placeholder="30" class="select1">
+              <ion-select-option value="30">30</ion-select-option>
+              <ion-select-option value="20">20</ion-select-option>
+              <ion-select-option value="15">15</ion-select-option>
+              <ion-select-option value="10">10</ion-select-option>
+            </ion-select>
+
+            <!--<ion-select interface="popover" placeholder="dias" class="select2">
+              <ion-select-option value="brown">dias</ion-select-option>
+              <ion-select-option value="blonde">semanas</ion-select-option>
+              <ion-select-option value="black">meses</ion-select-option>
+            </ion-select>-->
+          </div>
+          
+        </ion-item>
+
+     </ion-list>
+
+
+     <div class="btn22">
+      <ion-grid class="grid22">
+        <ion-row class="linha1"> 
+          <ion-col size="3" class="imgbtn">
+            <div class="imgcol">
+              <img src="../../assets/img/calen.png">
+            </div>
+          </ion-col>
+          <ion-col size="9">
+            <div class="btn22" (click)="novadata()">
+              <p>Adicionar<br>
+                nova data</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    </div>
+
+
+  </div>
+  
+  </ion-content>
+  

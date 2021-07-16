@@ -1,16 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { Component } from '@angular/core';
+import { ModalController, NavController } from '@ionic/angular';
+import { AnimationOptions } from '@ionic/angular/providers/nav-controller';
+import { NovointeressePageModule } from '../novointeresse/novointeresse.module';
 
 @Component({
   selector: 'app-detalhesqueridinhos',
   templateUrl: './detalhesqueridinhos.page.html',
   styleUrls: ['./detalhesqueridinhos.page.scss'],
 })
-export class DetalhesqueridinhosPage implements OnInit {
+export class DetalhesqueridinhosPage {
 
-  constructor(public modalController: ModalController) { }
+  constructor(
+    public modalController: ModalController,  
+    private navCtrl: NavController
+    ) {
 
-  ngOnInit() {
   }
 
   fechar() {
@@ -18,7 +22,35 @@ export class DetalhesqueridinhosPage implements OnInit {
       'dismissed': true
     });
   }
+
+  addinteresse() {
+
+    this.modalController.dismiss({
+      'dismissed': true
+    });
+    
+    this.navCtrl.navigateRoot('/novointeresse');
+  }
+
+
+  novadata() {
+
+    this.modalController.dismiss({
+      'dismissed': true
+    });
+    
+    this.navCtrl.navigateRoot('/datapersonalizada');
+  }
+
+  ajustinteresse() {
+
+    this.modalController.dismiss({
+      'dismissed': true
+    });
+    
+    this.navCtrl.navigateRoot('/ajusantecedencia');
+  }
+
+
   
-
-
 }

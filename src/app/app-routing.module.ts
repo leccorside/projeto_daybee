@@ -61,6 +61,18 @@ const routes: Routes = [
   {
     path: 'novoqueridinho4',
     loadChildren: () => import('./novoqueridinho4/novoqueridinho4.module').then( m => m.Novoqueridinho4PageModule)
+  },
+  {
+    path: 'novointeresse',
+    loadChildren: () => import('./novointeresse/novointeresse.module').then( m => m.NovointeressePageModule)
+  },
+  {
+    path: 'datapersonalizada',
+    loadChildren: () => import('./datapersonalizada/datapersonalizada.module').then( m => m.DatapersonalizadaPageModule)
+  },
+  {
+    path: 'ajusantecedencia',
+    loadChildren: () => import('./ajusantecedencia/ajusantecedencia.module').then( m => m.AjusantecedenciaPageModule)
   }
 
 

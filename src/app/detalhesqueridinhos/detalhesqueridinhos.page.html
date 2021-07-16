@@ -29,10 +29,10 @@
       <div class="interesses">
         <p>Interesses:</p>
 
-        <span class="tag">Bordados</span>
-        <span class="tag">Cinema</span>
-        <span class="tag">Gatos</span>
-        <span class="plus">+</span>
+        <ion-badge color="warning" class="gadge2">Bordados</ion-badge>
+        <ion-badge color="warning" class="gadge2">Cinema</ion-badge>
+        <ion-badge color="warning" class="gadge2">Gatos</ion-badge>
+        <ion-badge color="secondary" class="gadge3" (click)="addinteresse()">+</ion-badge>
       </div>
 
     </div>
@@ -130,7 +130,7 @@
                   </div>
                 </ion-col>
                 <ion-col size="9">
-                  <div class="btn22">
+                  <div class="btn22" (click)="novadata()">
                     <p>Adicionar<br>
                       nova data</p>
                   </div>
@@ -147,7 +147,7 @@
                   </div>
                 </ion-col>
                 <ion-col size="9">
-                  <div class="btn22">
+                  <div class="btn22" (click)="ajustinteresse()">
                     <p>Ajustar<br>
                       antecedência</p>
                   </div>
