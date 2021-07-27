@@ -1,0 +1,79 @@
+
+
+<ion-content>
+
+  <div class="queri">
+
+    <div class="favicon">
+      <img src="../../assets/img/favicon.png">
+    </div>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+   </ion-buttons>
+
+    <ion-icon name="close-outline" class="icoclose" (click)="fechar()"></ion-icon>
+
+
+    <div class="fotoperfil">
+      <img src="../../assets/img/foto.png">
+    </div>
+
+    <div class="infos1">
+      <div class="nome">
+        <ion-icon name="home-outline" class="icohouse"></ion-icon>
+        Maria Marcela 
+        <ion-icon name="settings-outline" class="config"></ion-icon>
+      </div>
+
+      <div class="graus">
+        <span class="grau">Mãe</span> 
+        <span class="nascimento">20/05/1978</span>
+      </div>
+
+      <div class="interesses">
+        <p><img src="../../assets/img/presente.png" class="calen">  Presentear</p>
+      </div>
+
+      <p class="des-p">
+        Faça alguma observação a respeito do presente.
+      </p>
+
+
+      <div class="listapresentes">
+
+        <div class="bloc1">
+          <img src="../../assets/img/livro.png">
+          <p>Livros</p>
+        </div>
+
+        <p class="p22">Conte alguma observação para esse presente.
+          Quanto mais soubermos, melhor! :)</p>
+
+          <div class="text">
+              <ion-textarea placeholder="Digite aqui suas observações."></ion-textarea>
+          </div>
+
+        <div class="setas">
+          <ion-item lines="none" color="transparent">
+
+            <ion-icon name="arrow-back-outline" class="left1" slot="start" (click)="voltar()"></ion-icon>
+
+            <ion-icon name="arrow-forward-outline" class="right1" slot="end" (click)="proximo()"></ion-icon>
+            
+          </ion-item>
+        </div>
+
+      </div>
+
+      <div class="listapresentes2">
+      </div>
+
+
+    </div>
+
+
+  </div>
+  
+  </ion-content>
+  

@@ -1,0 +1,148 @@
+ion-content{
+    margin-bottom: 40px;
+}
+
+.queri{
+    background-image: url('../../assets/img/bg1.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    overflow:hidden;
+    margin: 0 auto;
+    
+}
+
+.icoclose{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 30px;
+}
+
+.favicon img {
+    width: 100%;
+    max-width: 60px;
+    position: relative;
+    left: 12px;
+    top: 15px;
+}
+
+.lista h3{
+    text-align: center;
+    color: #4C2A0B;
+    font-weight: bold;
+    margin-top: 40px;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 19px;
+}
+
+ion-avatar{
+    width: 100%;
+    max-width: 65px !important;
+}
+
+ion-avatar img{
+   border-radius: 0 !important;
+   width: 100% !important;
+   max-width: 52px;
+}
+
+.span1{
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 16px;
+}
+
+.span2{
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 14px;
+}
+
+.listacards{
+    padding: 10px 10px 10px 20px;
+    margin-top: 30px;
+}
+
+ion-list{
+    background-color: transparent !important;
+}
+
+ion-item{
+    background-color: transparent !important;
+}
+
+.lista11{
+    border-bottom: 1px solid #fff;
+}
+
+ion-radio{
+    padding: 0 !important;
+    margin: 0 10px 0 0;
+    position: relative;
+    top: -8px;
+    background: transparent;
+}
+
+ion-radio-group {
+    position: relative;
+    left: -15px;
+    top: -4px;
+    background: transparent;
+}
+
+.itemcard ion-label{
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: -8px;
+    background: transparent;
+}
+
+.itemcard {
+    height: 30px;
+    position: relative;
+    left: -15px;
+}
+
+.radio-checked {
+    border-color: rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) !important;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.radio-checked .radio-icon {
+    border-color: #000;
+}
+
+.icons img{
+    width: 22px;
+}
+
+.icons ion-icon{
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.btn2{
+    margin-top: 50px;
+}
+
+.btn2 ion-fab-button{
+    margin: 0 auto;
+}
+
+.btn2 ion-icon{
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+

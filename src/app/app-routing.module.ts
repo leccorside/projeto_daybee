@@ -73,6 +73,30 @@ const routes: Routes = [
   {
     path: 'ajusantecedencia',
     loadChildren: () => import('./ajusantecedencia/ajusantecedencia.module').then( m => m.AjusantecedenciaPageModule)
+  },
+  {
+    path: 'presentear1',
+    loadChildren: () => import('./presentear1/presentear1.module').then( m => m.Presentear1PageModule)
+  },
+  {
+    path: 'presentear2',
+    loadChildren: () => import('./presentear2/presentear2.module').then( m => m.Presentear2PageModule)
+  },
+  {
+    path: 'presentear3',
+    loadChildren: () => import('./presentear3/presentear3.module').then( m => m.Presentear3PageModule)
+  },
+  {
+    path: 'meuscartoes',
+    loadChildren: () => import('./meuscartoes/meuscartoes.module').then( m => m.MeuscartoesPageModule)
+  },
+  {
+    path: 'novocartao',
+    loadChildren: () => import('./novocartao/novocartao.module').then( m => m.NovocartaoPageModule)
+  },
+  {
+    path: 'novoendereco',
+    loadChildren: () => import('./novoendereco/novoendereco.module').then( m => m.NovoenderecoPageModule)
   }
 
 

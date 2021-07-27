@@ -26,4 +26,8 @@ export class Tab1Page {
     return await modal.present();
   }
 
+  presentear(){
+    this.navCtrl.navigateRoot('/presentear1');
+  }
+
 }

@@ -1,0 +1,106 @@
+
+
+<ion-content>
+
+  <div class="queri">
+
+    <div class="favicon">
+      <img src="../../assets/img/favicon.png">
+    </div>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+   </ion-buttons>
+
+    <ion-icon name="close-outline" class="icoclose" (click)="fechar()"></ion-icon>
+
+
+    <div class="fotoperfil">
+      <img src="../../assets/img/foto.png">
+    </div>
+
+    <div class="infos1">
+      <div class="nome">
+        <ion-icon name="home-outline" class="icohouse"></ion-icon>
+        Maria Marcela 
+        <ion-icon name="settings-outline" class="config"></ion-icon>
+      </div>
+
+      <div class="graus">
+        <span class="grau">Mãe</span> 
+        <span class="nascimento">20/05/1978</span>
+      </div>
+
+      <div class="interesses">
+        <p><img src="../../assets/img/presente.png" class="calen">  Presentear</p>
+      </div>
+
+      <p class="des-p">
+        Escolha um valor.
+      </p>
+
+
+      <div class="listapresentes">
+
+        <div class="bloc1">
+          <p>Escolha um valor para a<br>
+            compra do presente</p>
+        </div>
+
+        <div class="precos">
+
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6">
+                <ion-badge color="warning" class="notspanselec" id="id1" (click)="id1()">R$ <span>50,00</span></ion-badge>
+              </ion-col>
+              <ion-col size="6">
+                <ion-badge color="warning" class="notspanselec" id="id2" (click)="id2()">R$ <span>100,00</span></ion-badge>
+              </ion-col>
+              <ion-col size="6">
+                <ion-badge color="warning" class="notspanselec" id="id3" (click)="id3()">R$ <span>150,00</span></ion-badge>
+              </ion-col>
+              <ion-col size="6">
+                <ion-badge color="warning" class="notspanselec" id="id4" (click)="id4()">R$ <span>200,00</span></ion-badge>
+              </ion-col>
+              <ion-col size="6">
+                <ion-badge color="warning" class="notspanselec" id="id5" (click)="id5()">R$ <span>250,00</span></ion-badge>
+              </ion-col>
+              <ion-col size="6">
+                <ion-badge color="warning" class="notspanselec" id="id6" (click)="id6()">R$ <span>300,00</span></ion-badge>
+              </ion-col>
+              <ion-col size="6">
+                <ion-badge color="warning" class="notspanselec" id="id7" (click)="id7()">R$ <span>350,00</span></ion-badge>
+              </ion-col>
+              <ion-col size="6">
+                <ion-badge color="warning" class="notspanselec" id="id8" (click)="id8()">R$ <span>400,00</span></ion-badge>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          
+        </div>
+
+
+        <div class="setas">
+          <ion-item lines="none" color="transparent">
+
+            <ion-icon name="arrow-back-outline" class="left1" slot="start" (click)="voltar()"></ion-icon>
+
+            <ion-icon name="arrow-forward-outline" class="right1" slot="end" (click)="proximo()"></ion-icon>
+            
+          </ion-item>
+        </div>
+
+      </div>
+
+      <div class="listapresentes2">
+      </div>
+
+
+    </div>
+
+
+  </div>
+  
+  </ion-content>
+  

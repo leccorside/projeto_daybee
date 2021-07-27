@@ -108,6 +108,11 @@ ion-content{
     margin-inline-start: 5px !important;
 }
 
+.end img{
+    position: relative;
+    z-index: 999;
+}
+
 .pdest {
     text-transform: uppercase;
     background: #fff;

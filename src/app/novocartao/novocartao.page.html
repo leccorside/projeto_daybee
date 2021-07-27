@@ -1,0 +1,176 @@
+
+
+<ion-content>
+
+  <div class="queri">
+
+    <div class="favicon">
+      <img src="../../assets/img/favicon.png">
+    </div>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+   </ion-buttons>
+
+    <ion-icon name="close-outline" class="icoclose" (click)="fechar()"></ion-icon>
+
+
+    <div class="fotoperfil">
+      <img src="../../assets/img/foto.png">
+    </div>
+
+    <div class="infos1">
+      <div class="nome">
+        <ion-icon name="home-outline" class="icohouse"></ion-icon>
+        Maria Marcela 
+        <ion-icon name="settings-outline" class="config"></ion-icon>
+      </div>
+
+      <div class="graus">
+        <span class="grau">Mãe</span> 
+        <span class="nascimento">20/05/1978</span>
+      </div>
+
+      <div class="interesses">
+        <p><img src="../../assets/img/presente.png" class="calen">  Presentear</p>
+      </div>
+
+      <p class="des-p">
+        Escolha uma categoria de presente e depois escolha um valor estipulado. A Daybee compra e envia o presente para seu Queridinho!
+      </p>
+
+
+      <div class="listapresentes">
+
+        <p class="cat2">Pagamento em cartão de crédito</p>
+
+        <div class="form">
+          <ion-item>
+            <ion-label position="floating" class="labelinput">CPF</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating" class="labelinput">Número do cartão</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating" class="labelinput">Nome do titular</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6">
+                <ion-item class="validade">
+                  <ion-label position="floating" class="labelinput">Validade</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+              </ion-col>
+              <ion-col size="6">
+                <ion-item class="cvv">
+                  <ion-label position="floating" class="labelinput">CVV</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+          <ion-item>
+            <ion-label position="floating" class="labelinput">Endereço de cobrança</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6">
+                <ion-item class="validade">
+                  <ion-label position="floating" class="labelinput">CEP</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+              </ion-col>
+              <ion-col size="6">
+                <ion-item class="cvv">
+                  <ion-label position="floating" class="labelinput">Cidade</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+          <ion-item>
+            <ion-label>Estado</ion-label>
+            <ion-select [interfaceOptions]="customActionSheetOptions" interface="alert" placeholder="Select One">
+              <ion-select-option value="AC">Acre</ion-select-option>
+              <ion-select-option value="AL">Alagoas</ion-select-option>
+              <ion-select-option value="AP">Amapá</ion-select-option>
+              <ion-select-option value="AM">Amazonas</ion-select-option>
+              <ion-select-option value="BA">Bahia</ion-select-option>
+              <ion-select-option value="CE">Ceará</ion-select-option>
+              <ion-select-option value="DF">Distrito Federal</ion-select-option>
+              <ion-select-option value="ES">Espírito Santo</ion-select-option>
+              <ion-select-option value="GO">Goiás</ion-select-option>
+              <ion-select-option value="MA">Maranhão</ion-select-option>
+              <ion-select-option value="MT">Mato Grosso</ion-select-option>
+              <ion-select-option value="MS">Mato Grosso do Sul</ion-select-option>
+              <ion-select-option value="MG">Minas Gerais</ion-select-option>
+              <ion-select-option value="PA">Pará</ion-select-option>
+              <ion-select-option value="PB">Paraíba</ion-select-option>
+              <ion-select-option value="PR">Paraná</ion-select-option>
+              <ion-select-option value="PE">Pernambuco</ion-select-option>
+              <ion-select-option value="PI">Piauí</ion-select-option>
+              <ion-select-option value="RJ">Rio de Janeiro</ion-select-option>
+              <ion-select-option value="RN">Rio Grande do Norte</ion-select-option>
+              <ion-select-option value="RS">Rio Grande do Sul</ion-select-option>
+              <ion-select-option value="RO">Rondônia</ion-select-option>
+              <ion-select-option value="RR">Roraima</ion-select-option>
+              <ion-select-option value="SC">Santa Catarina</ion-select-option>
+              <ion-select-option value="SP">São Paulo</ion-select-option>
+              <ion-select-option value="SE">Sergipe</ion-select-option>
+              <ion-select-option value="TO">Tocantins</ion-select-option>
+              <ion-select-option value="EX">Estrangeiro</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          
+        </div>
+
+        <div class="setas">
+
+          <ion-item lines="none" color="transparent">
+
+            <ion-icon name="arrow-back-outline" class="left1" slot="start" (click)="voltar()"></ion-icon>
+
+            <ion-label>
+
+              <ion-radio-group value="card">
+                <ion-item class="itemcard" lines="none" color="transparent">
+                  <ion-label>Salvar<br>cartão</ion-label>
+                  <ion-radio slot="start" value="card3"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+
+              <ion-badge color="warning" class="notspanselec" id="id3" (click)="escolhercartao()">Usar outro<br>cartão</ion-badge>
+              
+            </ion-label>
+
+            <ion-icon name="arrow-forward-outline" class="right1" slot="end" (click)="proximo()"></ion-icon>
+            
+          </ion-item>
+
+        </div>
+
+      </div>
+
+      <div class="listapresentes2">
+      </div>
+
+
+    </div>
+
+
+  </div>
+  
+  </ion-content>
+  
