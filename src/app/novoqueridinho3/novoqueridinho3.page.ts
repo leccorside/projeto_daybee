@@ -24,7 +24,7 @@ export class Novoqueridinho3Page implements OnInit {
   }
 
   proximo(){
-    this.navCtrl.navigateRoot('/novoqueridinho4');
+    this.navCtrl.navigateRoot('/tabs/novoqueridinho4');
   }
 
 

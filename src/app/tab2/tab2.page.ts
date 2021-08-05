@@ -21,7 +21,7 @@ export class Tab2Page {
   }
 
   proximo(){
-    this.navCtrl.navigateRoot('/novoqueridinho2');
+    this.navCtrl.navigateRoot('/tabs/novoqueridinho2');
   }
 
 

@@ -18,37 +18,31 @@ export class DetalhesqueridinhosPage {
   }
 
   fechar() {
-    this.modalController.dismiss({
-      'dismissed': true
-    });
+    this.navCtrl.back();
   }
 
   addinteresse() {
-
-    this.modalController.dismiss({
-      'dismissed': true
-    });
     
-    this.navCtrl.navigateRoot('/novointeresse');
+    this.navCtrl.navigateRoot('/tabs/novointeresse');
   }
 
 
   novadata() {
 
-    this.modalController.dismiss({
-      'dismissed': true
-    });
-    
-    this.navCtrl.navigateRoot('/datapersonalizada');
+    this.navCtrl.navigateRoot('/tabs/datapersonalizada');
   }
 
   ajustinteresse() {
-
-    this.modalController.dismiss({
-      'dismissed': true
-    });
     
-    this.navCtrl.navigateRoot('/ajusantecedencia');
+    this.navCtrl.navigateRoot('/tabs/ajusantecedencia');
+  }
+
+  configqueridinho(){
+    this.navCtrl.navigateRoot('/tabs/configuracoesqueridinho');
+  }
+
+  detalhes(){
+    this.navCtrl.navigateRoot('/tabs/presentear1');
   }
 
 

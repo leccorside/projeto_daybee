@@ -26,6 +26,10 @@ export class Tab1Page {
     return await modal.present();
   }
 
+  detalhes2(){
+    this.navCtrl.navigateRoot('/tabs/detalhesqueridinhos');
+  }
+
   presentear(){
     this.navCtrl.navigateRoot('/presentear1');
   }

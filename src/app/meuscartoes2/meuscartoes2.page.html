@@ -1,0 +1,111 @@
+
+
+<ion-content>
+
+  <div class="queri">
+
+    <div class="favicon">
+      <img src="../../assets/img/favicon.png">
+    </div>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+   </ion-buttons>
+
+    <ion-icon name="close-outline" class="icoclose" (click)="voltar()"></ion-icon>
+
+    <div class="lista">
+      <h3>Meus cartões de crédito</h3>
+
+
+      <div class="listacards">
+
+
+        <ion-list>
+          <ion-radio-group value="card">
+            <ion-item lines="none" color="transparent" class="lista11">
+              <ion-avatar slot="start">
+                <img src="../../assets/img/mastercard.png">
+              </ion-avatar>
+
+              <ion-label>
+                <p class="span1">Doralice Alice Alves</p>
+                <p class="span2">*****0000</p>
+    
+                  <ion-item class="itemcard" lines="none" color="transparent">
+                    <ion-label>PADRÃO</ion-label>
+                    <ion-radio slot="start" value="card"></ion-radio>
+                  </ion-item>
+              
+              </ion-label>
+
+              <div class="icons" slot="end">
+                <img src="../../assets/img/edit2.png">
+                <ion-icon name="trash-outline"></ion-icon>
+              </div>
+            </ion-item>
+
+            <ion-item lines="none" color="transparent" class="lista11">
+              <ion-avatar slot="start">
+                <img src="../../assets/img/mastercard.png">
+              </ion-avatar>
+
+              <ion-label>
+                <p class="span1">Doralice Alice Alves</p>
+                <p class="span2">*****0000</p>
+    
+           
+                  <ion-item class="itemcard" lines="none" color="transparent">
+                    <ion-label>PADRÃO</ion-label>
+                    <ion-radio slot="start" value="card2"></ion-radio>
+                  </ion-item>
+           
+              </ion-label>
+
+              <div class="icons" slot="end">
+                <img src="../../assets/img/edit2.png">
+                <ion-icon name="trash-outline"></ion-icon>
+              </div>
+            </ion-item>
+
+            <ion-item lines="none" color="transparent" class="lista11">
+              <ion-avatar slot="start">
+                <img src="../../assets/img/mastercard.png">
+              </ion-avatar>
+
+              <ion-label>
+                <p class="span1">Doralice Alice Alves</p>
+                <p class="span2">*****0000</p>
+    
+       
+                  <ion-item class="itemcard" lines="none" color="transparent">
+                    <ion-label>PADRÃO</ion-label>
+                    <ion-radio slot="start" value="card3"></ion-radio>
+                  </ion-item>
+               
+              </ion-label>
+
+              <div class="icons" slot="end">
+                <img src="../../assets/img/edit2.png">
+                <ion-icon name="trash-outline"></ion-icon>
+              </div>
+
+            </ion-item>
+        
+          </ion-radio-group>
+        </ion-list>
+
+      </div>
+
+      <div class="btn2">
+        <ion-fab-button color="secondary" horizontal="center" (click)="confirmar()">
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+      </div>
+      
+    </div>
+
+  </div>
+  
+  </ion-content>
+  

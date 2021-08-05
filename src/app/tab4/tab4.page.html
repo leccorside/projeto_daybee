@@ -2,7 +2,131 @@
 
 <ion-content>
 
-  <div class="login2">
+  <div class="queri">
+
+    <div class="favicon">
+      <img src="../../assets/img/favicon.png">
+    </div>
+
+    <ion-icon name="close-outline" class="icoclose" (click)="fechar()"></ion-icon>
+
+
+    <div class="fotoperfil">
+      <img src="../../assets/img/foto4.png">
+      <img src="../../assets/img/camera.png"class="icocamera" (click)="presentActionSheet()">
+    </div>
+
+    <div class="infos1">
+      <div class="nome">
+        Doralice Alice
+        
+      </div>
+
+      <div class="graus">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="6" class="col1">
+              Faltam <b>239</b> dias<br>
+              para o seu aniversário
+            </ion-col>
+            <ion-col size="6" class="col2">
+              <ion-icon name="settings-outline" class="config" (click)="configuracoes()"></ion-icon>
+              <img src="../../assets/img/edit3.png" class="edit" (click)="editarperfil()">
+              <ion-icon name="share-social-outline" class="share" (click)="compartilhar()"></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+      <div class="interesses">
+        <p>Interesses:</p>
+
+        <ion-badge color="warning" class="gadge2">Bordados</ion-badge>
+        <ion-badge color="warning" class="gadge2">Cinema</ion-badge>
+        <ion-badge color="warning" class="gadge2">Gatos</ion-badge>
+        <ion-badge color="secondary" class="gadge3" (click)="addinteresse()">+</ion-badge>
+      </div>
+
+    </div>
+
+    <div class="meus">
+      <ion-button shape="round" class="btn3" (click)="meusqueri()">
+        <img src="../../assets/img/ico1.png"> Meus Queridinhos
+      </ion-button>
+    </div>
+
+    <div class="resumo">
+
+      <p class="titulo4">Datas se aproximando:</p>
+
+      <ion-list lines="none">
+
+          <ion-item button (click)="detalhes()" class="item2" color="transparent">
+            
+            <div class="trash" slot="start">
+              <ion-icon name="trash-outline"></ion-icon>
+            </div>
+
+            <ion-label class="nomes1">
+              <span>Dia das Mães</span>  
+            </ion-label>
+
+            <div class="end" slot="end">
+              <span class="dot">..............</span>
+              <span class="data">09/05</span>  
+              <img src="../../assets/img/plus2.png">
+            </div>
+            
+          </ion-item>
+
+          <ion-item button (click)="detalhes()" class="item2" color="transparent">
+            
+            <div class="trash" slot="start">
+              <ion-icon name="trash-outline"></ion-icon>
+            </div>
+
+            <ion-label class="nomes1">
+              <span>Dia da Mulher</span>  
+            </ion-label>
+
+            <div class="end" slot="end">
+              <span class="dot">..............</span>
+              <span class="data">08/03</span>  
+              <img src="../../assets/img/plus2.png">
+            </div>
+            
+          </ion-item>
+
+          <ion-item button (click)="detalhes()" class="item2" color="transparent">
+            
+            <div class="trash" slot="start">
+              <ion-icon name="trash-outline"></ion-icon>
+            </div>
+
+            <ion-label class="nomes1">
+              <span>Páscoa</span>  
+            </ion-label>
+
+            <div class="end" slot="end">
+              <span class="dot">..............</span>
+              <span class="data">17/04</span>  
+              <img src="../../assets/img/plus2.png">
+            </div>
+            
+          </ion-item>
+
+       </ion-list>
+
+
+    </div>
+
+
+    <div class="btnpresentear">
+      <ion-button color="secondary" class="btnpres" (click)="assinar()">
+        ASSINE O PLANO MENSAL<br>
+        POR R$ 4,99 / MÊS
+      </ion-button>
+    </div>
 
   
   </div>

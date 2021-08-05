@@ -4,14 +4,13 @@ ion-content{
 
 .queri{
     background-image: url('../../assets/img/bg1.png');
-    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     width: 100%;
     overflow:hidden;
     margin: 0 auto;
-    
+    padding-bottom: 15px;
 }
 
 .favicon img{
@@ -31,7 +30,7 @@ ion-content{
     color: #4C2A0B;
     font-weight: 800;
     font-family: 'Montserrat-Bold', sans-serif !important;
-    font-size: 27px;
+    font-size: 23px;
     margin-bottom: 30px;
 }
 
@@ -43,7 +42,7 @@ ion-content{
 .resumo h2{
     text-align: center;
     color: #4C2A0B;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Montserrat-Bold', sans-serif !important;
 }
 

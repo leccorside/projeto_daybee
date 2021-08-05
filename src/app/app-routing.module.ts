@@ -50,7 +50,8 @@ const routes: Routes = [
   {
     path: 'detalhesqueridinhos',
     loadChildren: () => import('./detalhesqueridinhos/detalhesqueridinhos.module').then( m => m.DetalhesqueridinhosPageModule)
-  },  {
+  },
+  {
     path: 'novoqueridinho2',
     loadChildren: () => import('./novoqueridinho2/novoqueridinho2.module').then( m => m.Novoqueridinho2PageModule)
   },
@@ -97,10 +98,71 @@ const routes: Routes = [
   {
     path: 'novoendereco',
     loadChildren: () => import('./novoendereco/novoendereco.module').then( m => m.NovoenderecoPageModule)
+  },
+  {
+    path: 'confirmacompra',
+    loadChildren: () => import('./confirmacompra/confirmacompra.module').then( m => m.ConfirmacompraPageModule)
+  },
+  {
+    path: 'pedidoconfirmado',
+    loadChildren: () => import('./pedidoconfirmado/pedidoconfirmado.module').then( m => m.PedidoconfirmadoPageModule)
+  },
+  {
+    path: 'planomensal',
+    loadChildren: () => import('./planomensal/planomensal.module').then( m => m.PlanomensalPageModule)
+  },
+  {
+    path: 'meuscartoes2',
+    loadChildren: () => import('./meuscartoes2/meuscartoes2.module').then( m => m.Meuscartoes2PageModule)
+  },
+  {
+    path: 'confirmacaoplano',
+    loadChildren: () => import('./confirmacaoplano/confirmacaoplano.module').then( m => m.ConfirmacaoplanoPageModule)
+  },
+  {
+    path: 'configuracoes',
+    loadChildren: () => import('./configuracoes/configuracoes.module').then( m => m.ConfiguracoesPageModule)
+  },
+  {
+    path: 'meusinteresses',
+    loadChildren: () => import('./meusinteresses/meusinteresses.module').then( m => m.MeusinteressesPageModule)
+  },
+  {
+    path: 'politicasprivacidade',
+    loadChildren: () => import('./politicasprivacidade/politicasprivacidade.module').then( m => m.PoliticasprivacidadePageModule)
+  },
+  {
+    path: 'politicasdaybee',
+    loadChildren: () => import('./politicasdaybee/politicasdaybee.module').then( m => m.PoliticasdaybeePageModule)
+  },
+  {
+    path: 'configuracoesqueridinho',
+    loadChildren: () => import('./configuracoesqueridinho/configuracoesqueridinho.module').then( m => m.ConfiguracoesqueridinhoPageModule)
+  },
+  {
+    path: 'deletarqueridinho1',
+    loadChildren: () => import('./deletarqueridinho1/deletarqueridinho1.module').then( m => m.Deletarqueridinho1PageModule)
+  },
+  {
+    path: 'deletarqueridinho2',
+    loadChildren: () => import('./deletarqueridinho2/deletarqueridinho2.module').then( m => m.Deletarqueridinho2PageModule)
+  },
+  {
+    path: 'presentescomprados',
+    loadChildren: () => import('./presentescomprados/presentescomprados.module').then( m => m.PresentescompradosPageModule)
+  },
+  {
+    path: 'ajuda',
+    loadChildren: () => import('./ajuda/ajuda.module').then( m => m.AjudaPageModule)
+  },
+  {
+    path: 'comofunciona',
+    loadChildren: () => import('./comofunciona/comofunciona.module').then( m => m.ComofuncionaPageModule)
+  },
+  {
+    path: 'conhecaadaybee',
+    loadChildren: () => import('./conhecaadaybee/conhecaadaybee.module').then( m => m.ConhecaadaybeePageModule)
   }
-
-
-
 ];
 @NgModule({
   imports: [

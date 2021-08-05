@@ -25,7 +25,7 @@ export class NovoenderecoPage implements OnInit {
   }
 
   proximo(){
-    this.navCtrl.navigateRoot('/novoendereco');
+    this.navCtrl.navigateRoot('/confirmacompra');
   }
 
 }

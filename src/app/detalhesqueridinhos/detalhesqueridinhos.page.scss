@@ -5,6 +5,7 @@ ion-content{
 .btnpresentear {
     text-align: center;
     margin-top: 12px;
+    margin-bottom: 50px;
 }
 
 .btnpresentear img{
@@ -67,19 +68,18 @@ span.num1 {
 
 .queri{
     background-image: url('../../assets/img/bg1.png');
-    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     width: 100%;
     overflow:hidden;
-    margin: 0 auto;
+    margin: 0 50px auto auto;
     
 }
 
 .icoclose{
     position: absolute;
-    top: 12px;
+    top: 23px;
     right: 12px;
     font-size: 30px;
 }
@@ -87,6 +87,8 @@ span.num1 {
 .fotoperfil {
     width: 100%;
     text-align: center;
+    margin-bottom: 35px;
+    margin-top: -35px;
 }
 
 .fotoperfil img{
@@ -105,7 +107,7 @@ span.num1 {
     text-align: center;
     background: #fff;
     padding: 57px 10px 25px 10px;
-    margin-top: -50px;
+    margin-top: -85px;
 }
 
 .nome {

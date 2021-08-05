@@ -17,20 +17,7 @@ export class NovointeressePage {
 
   fechar() {
 
-    this.modalController.dismiss({
-      'dismissed': true
-    });
-
-    let animations:AnimationOptions={
-      animated: true,
-      animationDirection: "back"
-    }
-
-    //this.router.navigateByUrl('/novointeresse');
-
-    this.navCtrl.back(animations)
-    
-    //this.navCtrl.navigateRoot('/novointeresse');
+    this.navCtrl.back();
 
   }
 

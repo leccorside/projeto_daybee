@@ -1,0 +1,45 @@
+
+
+<ion-content>
+
+  <div class="queri">
+
+    <div class="favicon">
+      <img src="../../assets/img/favicon.png">
+    </div>
+
+    <ion-icon name="close-outline" class="icoclose" (click)="fechar()"></ion-icon>
+
+
+    <div class="fotoperfil">
+      <img src="../../assets/img/foto.png">
+      <img src="../../assets/img/camera.png"class="icocamera" (click)="presentActionSheet()">
+    </div>
+
+    <div class="infos1">
+      <div class="nome">
+        Maria Marcela <img src="../../assets/img/edit3.png" class="edit" (click)="editarperfil()">
+        
+      </div>
+
+
+      <div class="interesses">
+        <p> <ion-icon name="settings-outline" class="config"></ion-icon> 
+          Configurações</p>
+      </div>
+
+      <div class="links">
+        <a (click)="presentear()">Presentear</a><br>
+        <a (click)="interesses()">Interesses</a><br>
+        <a (click)="mudarinfo()">Mudar informações</a><br>
+        <a  (click)="datascome()">Datas comemorativas</a><br>
+        <a  (click)="deletar()">Deletar Queridinho</a><br>
+      </div>
+
+    </div>
+
+
+  </div>
+  
+  </ion-content>
+  

@@ -26,4 +26,8 @@ export class LoginPage implements OnInit {
     this.navCtrl.navigateRoot('/cadastro1');
   }
 
+  entrar(){
+    this.navCtrl.navigateRoot('/tabs/tab1');
+  }
+
 }

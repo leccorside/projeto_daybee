@@ -1,0 +1,124 @@
+
+
+<ion-content>
+
+  <div class="queri">
+
+    <div class="favicon">
+      <img src="../../assets/img/favicon.png">
+    </div>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+   </ion-buttons>
+
+    <ion-icon name="close-outline" class="icoclose" (click)="fechar()"></ion-icon>
+
+      <div class="titulo1">
+        <h2>Confirmação de compra</h2>
+      </div>
+
+      <div class="dados">
+
+        <p class="span1">Presente para:</p>
+
+        <ion-list>
+
+            <ion-item lines="none" color="transparent" class="lista11">
+              <ion-avatar slot="start">
+                <img src="../../assets/img/foto.png">
+              </ion-avatar>
+
+              <ion-label>
+                <p class="p1">Maria Marcela</p>
+                <p class="p2">Mãe, aniversário: 20/05</p>
+                <p class="p3">Faltam 23 dias </p>
+                <ion-badge color="warning" class="badge1">Escrever mensagem especial</ion-badge>
+              </ion-label>
+
+              <div class="icons" slot="end">
+                <img src="../../assets/img/edit.png" class="img11">
+                <img src="../../assets/img/ico22.png" class="img22">
+              </div>
+            </ion-item>
+
+            <ion-item lines="none" color="transparent" class="lista12">
+     
+              <ion-label>
+                <p class="p1" style="margin-bottom: 8px;">Endereço de entrega:</p>
+                <p class="p3">Rua Tal Tal, nº 00, bairro Tal Tal, Tal</p>
+                <p class="p3">Cidade Tal, Estado Tal, País Tal</p>
+                <p class="p3">Referência Tal Tal Tal, CEP 00.000-000</p>
+              </ion-label>
+
+              <div class="icons" slot="end">
+                <img src="../../assets/img/edit.png" class="img11">
+              </div>
+            </ion-item>
+
+            <p class="pagamento">Pagamento:</p>
+
+            <ion-item lines="none" color="transparent" class="lista13">
+
+                <img src="../../assets/img/mastercard.png" slot="start" style="margin-right: 17px;">
+
+              <ion-label>
+                <p class="p1">Doralice Alice Alves</p>
+                <p class="p2">*****0000</p>
+                <p class="p2">Padrão </p>
+              </ion-label>
+
+              <div class="icons" slot="end">
+                <img src="../../assets/img/edit.png" class="img11">
+              </div>
+            </ion-item>
+
+        </ion-list>
+
+      </div>
+
+      <div class="listapresentes2">
+
+        <ion-grid>
+          <ion-row>
+            <ion-col size="7" style="text-align: center;">
+              <div class="coluna1">
+                <p class="valortotal">Valor total <img src="../../assets/img/edit2.png" style="width: 15px;"></p>
+                <p class="p5">R$ 50,00 escolhidos<br>
+                  + R$ 12,00 de frete
+                </p>
+                <ion-badge color="warning" class="badge2">Total: R$ 62,00</ion-badge>
+              </div>
+            </ion-col>
+            <ion-col size="5" style="text-align: center;">
+              <p class="valortotal">Categoria <img src="../../assets/img/edit2.png" style="width: 15px;"></p>
+
+              <div class="icolivro">
+                <img src="../../assets/img/livro.png">
+                <p>Livros</p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <ion-grid style="margin-top: 10px;">
+          <ion-row>
+            <ion-col size="6" style="text-align: center;">
+             <p class="p6">Prazo para entrega:<br>
+              <span>10 a 15 dias úteis.</span></p>
+            </ion-col>
+            <ion-col size="6" style="text-align: center;">
+              <ion-button shape="round" color="secondary" class="btn3" (click)="confirmar()">Confirmado!</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </div>
+
+
+    </div>
+
+
+
+  </ion-content>
+  

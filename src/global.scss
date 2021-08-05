@@ -67,6 +67,20 @@
     src: url('assets/fonts/Montserrat-ExtraBold.ttf');
   }
 
+  @font-face {
+    font-family: 'Montserrat-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Montserrat-Medium.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat-MediumItalic';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Montserrat-MediumItalic.ttf');
+  }
+
 .swiper-pagination-bullets {
     bottom: 10px !important;
 }
@@ -91,6 +105,18 @@ ion-tab-button {
         border-radius: 50%;
     }
   }
+
+  .my-modal-class{
+    widows: 70px;
+    --border-radius: 15px;
+    --height: 50%;
+    padding: 0 40px;
+    --background: transparent;
+  }
+
+  .contentmodal#background-content {
+    --background: transparent !important;
+}
 
 
 

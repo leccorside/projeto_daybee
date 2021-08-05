@@ -1,0 +1,57 @@
+
+
+<ion-content>
+
+  <div class="queri">
+
+    <div class="favicon">
+      <img src="../../assets/img/favicon.png">
+    </div>
+
+    <ion-icon name="close-outline" class="icoclose" (click)="fechar()"></ion-icon>
+
+
+    <div class="fotoperfil">
+      <img src="../../assets/img/foto4.png">
+      <img src="../../assets/img/camera.png"class="icocamera" (click)="presentActionSheet()">
+    </div>
+
+    <div class="infos1">
+      <div class="nome">
+        Doralice Alice <img src="../../assets/img/edit3.png" class="edit" (click)="editarperfil()">
+        
+      </div>
+
+
+      <div class="interesses">
+        <p> <ion-icon name="settings-outline" class="config"></ion-icon> 
+          Configurações</p>
+      </div>
+
+      <div class="links">
+        <a (click)="meusinteresses()">Meus interesses</a><br>
+        <a (click)="presentescomprados()">Presentes comprados</a><br>
+        <a (click)="politicasprivacidade()">Política de Privacidade</a><br>
+        <a  (click)="politicasdaybee()">Políticas da Daybee</a><br>
+        <a  (click)="conhecadaybee()">Conheça a Daybee</a><br>
+        <a  (click)="ajuda()">Ajuda</a><br>
+        <a  (click)="sair()">Sair</a><br>
+      </div>
+
+      <div class="btnpresentear">
+        <ion-button color="secondary" class="btnpres" (click)="assinar()">
+          ASSINE O PLANO MENSAL<br>
+          POR R$ 4,99 / MÊS
+        </ion-button>
+
+        <p><a (click)="deletarconta()">Deletar conta</a></p>
+
+      </div>
+
+    </div>
+
+
+  </div>
+  
+  </ion-content>
+  

@@ -19,7 +19,7 @@ export class Presentear1Page implements OnInit {
 
   fechar() {
 
-    this.navCtrl.navigateRoot('/tabs/tab1');
+    this.navCtrl.back();
 
    /* this.modalController.dismiss({
       'dismissed': true

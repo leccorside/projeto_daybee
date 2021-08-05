@@ -1,0 +1,96 @@
+ion-content{
+    margin-bottom: 40px;
+}
+
+.queri{
+    background-image: url('../../assets/img/bg-confirm.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    overflow:hidden;
+    margin: 0 auto;
+    height: 100%;  
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.favicon {
+    position: absolute;
+    top: 0;
+    left:0px;
+}
+
+.icoclose{
+    position: absolute;
+    top: 23px;
+    right: 12px;
+    font-size: 30px;
+}
+
+.favicon img{
+    width: 100%;
+    max-width: 60px;
+    position: relative;
+    left: 12px;
+    top: 15px;
+}
+
+.confirm1{
+    text-align: center;
+}
+
+.confirm1 h3{
+    color: #4C2A0B;
+    font-size: 18px;
+    font-family: 'Montserrat-Bold', sans-serif !important;
+}
+
+.confirm1 img{
+    width: 100%;
+    max-width: 100px;
+}
+
+.p1 {
+    font-family: 'Montserrat-Regular', sans-serif !important;
+    font-size: 13px;
+    line-height: 18px;
+    max-width: 240px;
+    margin: 0 auto;
+    width: 100%;
+    color: #4C2A0B;
+    padding-top: 10px;
+}
+
+.p2 {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Montserrat-Bold', sans-serif !important;
+}
+
+.p3 {
+    font-size: 20px;
+    color: #4C2A0B;
+    font-family: 'Montserrat-Bold', sans-serif !important;
+}
+
+.p4 {
+    color: #fff;
+    font-family: 'Montserrat-Bold', sans-serif !important;
+    font-size: 15px;
+}
+
+.btn3{
+    background: #9D55D4;
+    color: #fff;
+    font-size: 13px !important;
+    position: relative;
+    top: 12px;
+    border-radius: 50px;
+    border: 1px solid #4C2A0B;
+    height: 50px;
+    text-transform: none;
+}

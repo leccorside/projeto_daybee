@@ -21,25 +21,12 @@ export class AjusantecedenciaPage implements OnInit {
 
   fechar() {
 
-    this.modalController.dismiss({
-      'dismissed': true
-    });
-
-    let animations:AnimationOptions={
-      animated: true,
-      animationDirection: "back"
-    }
-
-    //this.router.navigateByUrl('/novointeresse');
-
-    this.navCtrl.back(animations)
+    this.navCtrl.back()
     
-    //this.navCtrl.navigateRoot('/novointeresse');
-
   }
 
   novadata(){
-    this.navCtrl.navigateRoot('/datapersonalizada');
+    this.navCtrl.navigateRoot('/tabs/datapersonalizada');
   }
 
 }
