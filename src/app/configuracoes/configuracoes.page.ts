@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { AlertController, NavController } from '@ionic/angular';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'app-configuracoes',
@@ -8,7 +9,17 @@ import { NavController } from '@ionic/angular';
 })
 export class ConfiguracoesPage implements OnInit {
 
-  constructor(private navCtrl: NavController) { }
+  public datastorage: any;
+
+  constructor(
+    private navCtrl: NavController,  
+    private storage: Storage,
+    private alertCtrl: AlertController
+    ) { 
+
+    
+    
+  }
 
   ngOnInit() {
   }
@@ -45,8 +56,35 @@ export class ConfiguracoesPage implements OnInit {
     this.navCtrl.navigateRoot('/tabs/ajuda');
   }
 
-  sair(){
-    this.navCtrl.navigateRoot('/login');
+  async sair(){
+
+    const alert = await this.alertCtrl.create({
+      cssClass: 'my-custom-class',
+      header: 'Deseja mesmo sair?',
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: (blah) => {
+            console.log('Cancelado');
+          }
+        }, {
+          text: 'Sair',
+          handler: () => {
+            this.deslogar();
+            this.navCtrl.navigateRoot('/login');
+          }
+        }
+      ]
+    });
+
+    await alert.present();
+  }
+
+  deslogar(){
+    this.storage.remove('session_storage');
+    this.storage.clear();
   }
 
   deletarconta(){

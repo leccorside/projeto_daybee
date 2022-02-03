@@ -1,6 +1,5 @@
 .login2{
     background-image: url('../../assets/img/bg1.png');
-    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -105,10 +104,17 @@ ion-slides {
     margin-bottom: 15px;
     color: #fff;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .btns4 .fab{
     margin-right: 7px;
     font-size: 20px;
+}
+
+.ou {
+    margin: 0;
+    text-align: center;
+    color: #4C2A0B;
+    font-family: 'Montserrat-Regular';
 }

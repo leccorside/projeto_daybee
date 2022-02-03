@@ -3,52 +3,49 @@ import { NavController, ToastController } from '@ionic/angular';
 import { LoginService } from '../services/accounts/login.service';
 
 @Component({
-  selector: 'app-esquecisenha',
-  templateUrl: './esquecisenha.page.html',
-  styleUrls: ['./esquecisenha.page.scss'],
+  selector: 'app-redefinirsenha',
+  templateUrl: './redefinirsenha.page.html',
+  styleUrls: ['./redefinirsenha.page.scss'],
 })
-export class EsquecisenhaPage implements OnInit {
+export class RedefinirsenhaPage implements OnInit {
 
-  email: string = "";
+  code: string = "";
+  password: string = "";
   message: any;
 
   constructor(
     private navCtrl: NavController, 
     public toast: ToastController,
     public loginService: LoginService
-    ) { }
+  ) { }
 
   ngOnInit() {
   }
 
-  login(){
-    this.navCtrl.navigateRoot('/login');
-  }
-
-  codigo(){
-    this.navCtrl.navigateRoot('/redefinirsenha');
-  }
-
-  recuperar(){
+  redefinir(){
     let body = {
-      email: this.email
+      code: this.code,
+      password: this.password
     }
 
-    if(this.email == ""){
-      this.presentToast('Preencha o e-mail');
+    if(this.code == ""){
+      this.presentToast('Preencha o código');
+    }
+    if(this.password == ""){
+      this.presentToast('Preencha a nova senha');
     }
     else{
-        this.loginService.postRecupera(body).subscribe(res =>{
+        this.loginService.RedefinirSenha(body).subscribe(res =>{
 
           if(res){
             console.log(res);
-            this.navCtrl.navigateRoot('/redefinirsenha');
-            this.presentToast('Um email foi enviado com o código para redefinir a sua senha!');
+            this.navCtrl.navigateRoot('/login');
+            this.presentToast('Senha alterada com sucesso!');
           }
           else{
             console.log('Erro ao tentar logar');
             console.log(res);
-            this.presentToast('Usuário não encontrado!');
+            this.presentToast('Erro na tentativa ou código incorreto!');
           }
         
       }, async err => {
@@ -56,6 +53,10 @@ export class EsquecisenhaPage implements OnInit {
         this.presentToast('Usuário não encontrado!');
       });
     }
+  }
+
+  login(){
+    this.navCtrl.navigateRoot('/login');
   }
 
   async presentToast(a){

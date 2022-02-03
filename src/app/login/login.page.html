@@ -27,12 +27,12 @@
   <div class="form">
     <ion-item>
       <ion-label position="floating">Seu e-mail</ion-label>
-      <ion-input></ion-input>
+      <ion-input type="email" [(ngModel)]="credentials.email"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label position="floating">Senha</ion-label>
-      <ion-input></ion-input>
+      <ion-input type="password" [(ngModel)]="credentials.password"></ion-input>
     </ion-item>
 
     <div class="linha1">
@@ -41,8 +41,21 @@
     </div>
 
     <div class="btns4">
-      <button class="btn2" (click)="entrar()"><i class="fab fa-google"></i> Entre com o Google</button><br>
-      <button class="btn2" (click)="entrar()"><i class="fab fa-facebook-f"></i> Entre com o Facebook</button>
+      <button class="btn2" (click)="login3()">Entrar</button><br>
+
+      <p class="ou">Ou</p>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <button class="btn2" (click)="google()"><i class="fab fa-google"></i> Google</button>
+          </ion-col>
+          <ion-col size="6">
+            <button class="btn2" (click)="facebook()"><i class="fab fa-facebook-f"></i> Facebook</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
     </div>
 
   </div>

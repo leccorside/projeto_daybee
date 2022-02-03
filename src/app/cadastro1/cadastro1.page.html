@@ -1,7 +1,39 @@
 
 <ion-content>
 
-  <div class="login2">
+  <ion-slides pager="false">
+
+    <ion-slide>
+      <div class="login2">
+  
+        <div class="logo">
+          <img src="../../assets/img/logo.png">
+        </div>
+    
+        <p class="p2">Crie uma conta</p>
+      
+        <div class="form">
+          <ion-item>
+            <!--<ion-label position="floating">Qual seu nome</ion-label>-->
+            <ion-input placeholder="Qual seu nome" [(ngModel)]="name"></ion-input>
+           
+          </ion-item>
+      
+          <div class="linha1">
+            <ion-icon name="arrow-forward-outline" (click)="proximo()"></ion-icon>
+          </div>
+      
+          <div class="btns4">
+            <a (click)="login()">Entre com Google ou Facebook</a>
+          </div> 
+      
+        </div>
+      
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="login2">
   
     <div class="logo">
       <img src="../../assets/img/logo.png">
@@ -12,7 +44,36 @@
     <div class="form">
       <ion-item>
         <!--<ion-label position="floating">Qual seu nome</ion-label>-->
-        <ion-input placeholder="Qual seu nome"></ion-input>
+        <ion-input placeholder="Seu n° de celular" [(ngModel)]="phone"></ion-input>
+       
+      </ion-item>
+  
+      <div class="linha1">
+        <ion-icon name="arrow-forward-outline" (click)="proximo()"></ion-icon>
+      </div>
+  
+      <div class="btns4">
+        <a (click)="login()">Entre com Google ou Facebook</a>
+      </div>
+  
+    </div>
+  
+  </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="login2">
+  
+    <div class="logo">
+      <img src="../../assets/img/logo.png">
+    </div>
+
+    <p class="p2">Crie uma conta</p>
+  
+    <div class="form">
+      <ion-item>
+        <!--<ion-label position="floating">Qual seu nome</ion-label>-->
+        <ion-input placeholder="Digite seu melhor e-mail" [(ngModel)]="email"></ion-input>
        
       </ion-item>
   
@@ -24,11 +85,74 @@
         <a (click)="login()">Entre com Google ou Facebook</a>
       </div>
 
-      
-  
     </div>
   
   </div>
+  
+    </ion-slide>
+
+    <ion-slide>
+      <div class="login2">
+  
+    <div class="logo">
+      <img src="../../assets/img/logo.png">
+    </div>
+
+    <p class="p2">Crie uma conta</p>
+  
+    <div class="form">
+      <ion-item>
+        <!--<ion-label position="floating">Qual seu nome</ion-label>-->
+        <ion-input placeholder="Escolha uma senha" [(ngModel)]="password"></ion-input>
+       
+      </ion-item>
+  
+      <div class="linha1">
+        <ion-icon name="arrow-forward-outline" (click)="proximo()"></ion-icon>
+      </div>
+  
+      <div class="btns4">
+        <a (click)="login()">Entre com Google ou Facebook</a>
+      </div>
+
+    </div>
+  
+  </div>
+  
+    </ion-slide>
+
+    <ion-slide>
+      <div class="login2">
+  
+        <div class="logo">
+          <img src="../../assets/img/logo.png">
+        </div>
+    
+        <p class="p2">Escolha uma foto sua</p>
+      
+        <div class="form">
+          
+          <div class="imagem">
+            <img src="../../assets/img/bee5.png" class="foto">
+            <img src="../../assets/img/camera.png" class="camera" (click)="presentActionSheet()">
+          </div>
+          
+      
+          <div class="linha1">
+            <ion-icon name="arrow-forward-outline" (click)="cadastrar2()"></ion-icon>
+          </div>
+      
+          <div class="btns4">
+            <a (click)="login()">Entre com Google ou Facebook</a>
+          </div>
+    
+        </div>
+      
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+  
   
   </ion-content>
 

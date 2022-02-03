@@ -1,3 +1,4 @@
+import { AuthGuard } from './guards/auth.guard';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
@@ -9,7 +10,8 @@ const routes: Routes = [
   },
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule),
+    canActivate: [AuthGuard]
   },
   {
     path: 'intro',
@@ -162,6 +164,10 @@ const routes: Routes = [
   {
     path: 'conhecaadaybee',
     loadChildren: () => import('./conhecaadaybee/conhecaadaybee.module').then( m => m.ConhecaadaybeePageModule)
+  },
+  {
+    path: 'redefinirsenha',
+    loadChildren: () => import('./redefinirsenha/redefinirsenha.module').then( m => m.RedefinirsenhaPageModule)
   }
 ];
 @NgModule({

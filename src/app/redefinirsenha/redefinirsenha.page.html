@@ -1,0 +1,36 @@
+
+<ion-content>
+
+  <div class="login2">
+  
+    <div class="logo">
+      <img src="../../assets/img/logo.png">
+    </div>
+
+    <p class="p2">Insira o código que recebeu em seu e-mail e a nova senha.</p>
+  
+    <div class="form">
+      <ion-item>
+        <ion-label position="floating">Código</ion-label>
+        <ion-input [(ngModel)]="code"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Nova senha</ion-label>
+        <ion-input [(ngModel)]="password"></ion-input>
+      </ion-item>
+  
+      <div class="linha1">
+        <a class="esqueci" (click)="login()">Voltar ao Login</a>
+      </div>
+  
+      <div class="btns4">
+        <button class="btn2" (click)="redefinir()">Redefinir a senha</button><br>
+      </div>
+  
+    </div>
+  
+  </div>
+  
+  </ion-content>
+  

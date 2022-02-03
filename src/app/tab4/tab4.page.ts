@@ -1,5 +1,10 @@
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { ActionSheetController, NavController } from '@ionic/angular';
+import { Storage } from '@ionic/storage';
+import { LoginService } from '../services/accounts/login.service';
+
 
 @Component({
   selector: 'app-tab4',
@@ -8,12 +13,66 @@ import { ActionSheetController, NavController } from '@ionic/angular';
 })
 export class Tab4Page implements OnInit {
 
+  name: string = "";
+  email: string = "";
+  accessToken: string = "";
+  tokenatual1: string = "";
+
+  message: any;
+
+  public datastorage: any;
+  dadosperfil: any;
+  users: any = [];
+
+  token = '';
+
+  api_perfil: any = "https://api.daybee.com.br/profile";
+
   constructor(
     private navCtrl: NavController,
-    public actionSheetCtrl: ActionSheetController
-    ) { }
+    public actionSheetCtrl: ActionSheetController,
+    private storage: Storage,
+    public loginService: LoginService,
+    private http: HttpClient
+    ) {  
+      
+    }
 
   ngOnInit() {
+  }
+
+  ionViewWillEnter(){
+
+    this.storage.get('session_storage').then((res_storage)=>{
+      this.datastorage = res_storage;
+      var tokenatual1 = this.datastorage.accessToken;
+
+      //console.log('TOKEN 1: '+tokenatual1);
+      
+      this.users = [];
+      this.dadosperfil = [];
+      this.loadPromo();
+
+    });
+ 
+  }
+
+  loadPromo(){
+
+    let body = {
+      
+    };
+  
+    this.loginService.postData(body, 'profile').subscribe(data => {
+
+      this.dadosperfil = data;
+
+      console.log('TOKEN 2: '+this.datastorage.accessToken);
+      console.log("DADOS PERFIL:");
+      console.log(this.dadosperfil);
+      console.log(this.dadosperfil.name);
+    });
+  
   }
 
   fechar() {

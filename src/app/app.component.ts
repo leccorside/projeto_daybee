@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +11,28 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(
-  
+  constructor( 
+    private storage: Storage,
+    public navCtrl: NavController
     ) {
-     
+
+    this.initializeApp();
+
+  }
+
+    initializeApp() {
+
+      this.storage.create();
+
+      this.storage.get('session_storage').then((res)=>{
+        if(res == null){
+          this.navCtrl.navigateRoot('/login');
+        }
+        else{
+          this.navCtrl.navigateRoot('/tabs/tab1');
+        }
+      });
+  
     }
 
 

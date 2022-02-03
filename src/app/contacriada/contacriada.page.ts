@@ -18,7 +18,7 @@ export class ContacriadaPage implements OnInit {
   }
 
   proximo(){
-    this.navCtrl.navigateRoot('/tabs');
+    this.navCtrl.navigateRoot('/login');
   }
 
 }

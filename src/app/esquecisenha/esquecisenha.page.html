@@ -12,7 +12,7 @@
     <div class="form">
       <ion-item>
         <ion-label position="floating">Seu e-mail</ion-label>
-        <ion-input></ion-input>
+        <ion-input [(ngModel)]="email"></ion-input>
       </ion-item>
   
       <div class="linha1">
@@ -20,7 +20,11 @@
       </div>
   
       <div class="btns4">
-        <button class="btn2">Recuperar senha</button><br>
+        <button class="btn2" (click)="recuperar()">Recuperar senha</button><br>
+      </div>
+
+      <div class="linha1">
+        <a class="esqueci" (click)="codigo()">Já tenho o código de recuperação</a>
       </div>
   
     </div>
